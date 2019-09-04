@@ -1,0 +1,32 @@
+/* Usar sempre este padding para navbar-fixed-top */
+body {
+	padding-top: 70px;
+}
+
+.jumbotron {
+	color: #2c3e50;
+	background-color: #ecf0f1;
+}
+
+.navbar-inverse {
+	background-color: #2c3e50;
+}
+
+/* nestes 2 foi preciso inspecionar e copiar */
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+/* Estes fui eu que procurei sozinho no inspecionar para mudar o a:hover para vermelho */
+/* No inspecionar tenho que selecionar a parte que diz :hov senão não aparece */
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: red;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: red;
+    background-color: transparent;
+}

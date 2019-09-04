@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+
+	<!-- Isto é o CDN do FONT AWESOME, para funcionarem os icones deles --> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- NESTE ESTOU A USAR O CDN PORQUE O NORMAL DAVA ERRO NOS GLYPHICONS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Este é o meu CSS manual -->
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+
+	
+	<!-- O JavaScript DO JQUERY TEM QUE ESTAR SEMPRE ANTES DO JS DO BOOTSTRAP -->
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous">  	
+	</script>
+
+	<!-- Este é O JS do Bootstrap -->
+	<script type="text/javascript" src="bootstrap.js"></script>
+</head>
+
+<body>
+
+<!-- ISTO É A NAVBAR -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"> <!-- Quando se fixa a navbar ao topo, usar padding-top no body a 70px -->
+	<div class="container">
+
+		<div class="navbar-header">
+
+			<!-- Isto é o que cria o hamburger, e tem que estar dentro da DIV "navbar-header" o data-target tem que condizer com o id da div navbar-colapse (mas sem o #) -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#linksDoHamburger" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> IMGS</a>
+			
+		</div>
+
+		<div class="collapse navbar-collapse" id="linksDoHamburger"> <!-- Esta classe de DIV é para colapsar o conteúdo que vai para dentro do hamburger, atenção ao ID -->
+			<ul class="nav navbar-nav">   <!-- aqui as classes sao nav navbar-nav, e tem sempre que ter um li (em vez de ul pode ser div) -->
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>		
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Signup</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</div>
+
+	</div>
+</nav>
+
+
+<!-- ISTO É O JUMBOTRON -->
+<div class="container">
+
+	<div class="jumbotron">
+		<h1><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
+		<p>Uma coleção de imagens muito bonitas.</p>
+	</div>
+
+
+<!-- ISTO É A GRID SYSTEM  CONTINUA DENTRO DO CONTAINER -->
+	<div class="row">
+
+		<!-- IMAGEM 1 -->
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="http://i.imgur.com/qK42fUu.jpg">
+			</div>
+		</div>
+
+		<!-- IMAGEM 2 -->
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+
+		<!-- IMAGEM 3 -->
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+
+		<!-- IMAGEM 4 -->
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
+			</div>
+		</div>
+
+		<!-- IMAGEM 5 -->
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+
+		<!-- IMAGEM 6 -->
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+
+		<!-- IMAGEM 7 -->
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+
+		<!-- IMAGEM 8 -->
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+
+		<!-- IMAGEM 9 -->
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+
+	</div> <!-- Fecho da Tag ROW -->
+</div> <!-- Fecho do Container -->
+
+
+</body>
+</html>
